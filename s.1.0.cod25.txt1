@@ -23,7 +23,7 @@ TelescopeVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 VoiceVolume@0;14317;21371 = 0.500000 // 0.000000 to 1.000000
 
 // Adjusts overall volume of the game
-Volume@0;14317;21371 = 0.200000 // 0.000000 to 1.000000
+Volume@0;14317;21371 = 0.250000 // 0.000000 to 1.000000
 
 // War Tracks Volume
 WarTracksVolume@0;14317;21371 = 0.000000 // 0.000000 to 1.000000
@@ -39,9 +39,6 @@ VoicePushToTalk@0;57752;20945 = true
 
 // Number of output channels requested by the user. Not necessarily the actual channel count. Valid values are 2, 4, 6, 8, 16. Zero means use system default.
 AudioWantedChannelsNumber@0;59395;43096 = 2 // 0 to 16
-
-// Licensed Music Volume
-LicensedMusicVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Microphone device requested by the user
 SoundInputDevice@0;2059;35888 = 
@@ -271,6 +268,9 @@ UserEcoLowBatteryModeUI@0;57752;48403 = false
 // Automatically enables Low Battery Mode when the battery reaches the selected level.
 UserEcoLowBatteryThresholdUI@0;46255;143 = 10 // 10 to 100
 
+// Automatically enables Low Battery Mode when the battery reaches the selected level.
+UserEcoLowBatteryThresholdUI@1;15056;30730 = 10 // 10 to 100
+
 // Enable half resolution reflection probes
 ReflectionProbeHalfResolution@0;57752;48403 = true
 
@@ -284,10 +284,13 @@ ShaderQuality@0;19450;7764 = Low // one of Default, Medium, Low
 SubdivisionLevel@0;36080;58629 = 0 // 0 to 8
 
 // Drop the dynamic scene resolution in non-interactive scenes to save power.
-SustainabilityMenuSceneResolution@0;16519;11445 = min // one of off, min, full
+SustainabilityMenuSceneResolution@0;16519;11445 = off // one of off, min, full
 
 // Reduce rendering quality after being idle for a certain time period.
-SustainabilityReduceQualityIdle@0;15516;11445 = off // one of off, min, full
+SustainabilityReduceQualityIdle@0;44449;11445 = off // one of off, min, full
+
+// Reduce rendering quality after being idle for a certain time period.
+SustainabilityReduceQualityIdle@1;51018;9045 = off // one of off, 10 minutes, 5 minutes, 1 minute, 30 seconds
 
 // Pause rendering in Multiplayer when entering the pause menu or when out of focus to save power.
 SustainabilityPauseRendering@0;57752;48403 = false
@@ -338,7 +341,7 @@ ReflectionProbeRelighting@0;42543;9045 = 1 // 1 to 4
 ScreenSpaceShadowQuality@0;42742;43096 = Off // one of Off, Low, High
 
 // Shadow Quality Level
-ShadowQuality@0;3981;58629 = Very_Low // one of Very_Low, Low, Medium, High, Very_High
+ShadowQuality@0;3981;58629 = Low // one of Very_Low, Low, Medium, High, Very_High
 
 // Screen-space reflection quality level
 SSRQuality@0;58437;11445 = Off // one of Off, Low, High
@@ -422,7 +425,7 @@ YawSpeed@0;13349;2099 = 140.000000 // 0.000000 to 280.000000
 ConfigCloudStorageEnabled@0;57752;20945 = false
 
 // Version of the last display driver used to run the game
-DisplayDriverVersion@0;5555;35888 = 591.86
+DisplayDriverVersion@0;5555;35888 = 617.14
 
 // Recommended display driver version seen during last game startup
 DisplayDriverVersionRecommended@0;5555;35888 = 591.59
@@ -446,7 +449,7 @@ DisableHWChangeDetection@0;57752;48403 = false
 ESSDI@0;2059;35888 = 
 
 // DO NOT MODIFY. Last Detected GPU driver version
-GPUDriverVersion@0;2059;35888 = 59186 r590_00
+GPUDriverVersion@0;2059;35888 = 61714 r617_07
 
 // Last Drive type used for the game use to display a pop up
 LastSavedDriveType@0;3662;48403 = ssdorbetter // one of unknown, hdd, ssdorbetter, count
@@ -457,6 +460,9 @@ LastUsedGPU@0;56178;35888 = NVIDIA GeForce RTX 5080
 // Indicates whether recommended settings have been set, will reset settings to recommended if set to 0
 RecommendedSet@0;57752;48403 = true
 
+
+// Licensed Music Volume
+LicensedMusicVolume@0;14317;21371 = 1.000000 // 0.000000 to 1.000000
 
 // Use raw mouse input.
 MouseUsesRawInput@0;57752;20945 = true
